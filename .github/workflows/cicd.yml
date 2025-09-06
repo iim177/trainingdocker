@@ -36,5 +36,5 @@ jobs:
           docker pull muhaimin2025/nginx:latest
           docker stop nginx-iim || true
           docker rm nginx-iim || true
-          docker run -d -p 5020:80 --name nginx-iim --restart=always muhaimin2025/nginx-iim:latest
+          docker run -d -p 5020:80 --name nginx-iim --restart=always muhaimin2025/nginx:latest
         debug: true
